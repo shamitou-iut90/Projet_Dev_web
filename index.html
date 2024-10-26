@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -10,45 +9,49 @@
 <body>
     <nav class="navbar">
         <div class="navbar-brand">Charme & Brillance</div>
-        <ul class="navbar-menu">
+        <div class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+        <ul class="navbar-menu" id="js-menu">
             <li><a href="#">Accueil</a></li>
             <li><a href="#">À propos</a></li>
             <li><a href="#">Boutique</a></li>
             <li><a href="#">Panier</a></li>
         </ul>
     </nav>
-    
     <header class="main-header">
         <img src="images/bijoux14.webp" alt="Grande Image" class="large-image">
     </header>
-    
     <div class="text-block">
         <h3>Bienvenue sur Charme & Brillance!</h3>
-
-            <p>Ici vous découvrirez une séléction soigneusement choisie des meilleurs produits, alliant élégance et qualité. Pour découvrir la disponibilité de nos bijoux et explorer notre collection complète, rendez-vous sur notre page Boutique ! </h3> 
-            </p>
+        <p>Ici vous découvrirez une sélection soigneusement choisie des meilleurs produits, alliant élégance et qualité. Pour découvrir la disponibilité de nos bijoux et explorer notre collection complète, rendez-vous sur notre page Boutique!</p>
     </div>
-    
     <div class="image-gallery">
         <div class="image-frame">
             <img src="images/bijoux11.avif" alt="Image 1">
             <p class="centered-text">Connectez-vous pour voir le prix</p>
         </div>
-        
-        
         <div class="image-frame">
-            <img src="images/bijoux12.avif" alt="Image 2">
+            <img src="images/bijoux12.avif" alt="Image 2 ">
             <p class="centered-text">Connectez-vous pour voir le prix</p>
-            
         </div>
         <div class="image-frame">
             <img src="images/bijoux13.jpg" alt="Image 3">
             <p class="centered-text">Connectez-vous pour voir le prix</p>
         </div>
     </div>
-    
     <footer class="footer">
-        <p>&copy;2024 Charme & Brillance. Tous droits réservés.Fait Par Serine HAMITOUCHE</p>
+        <p>&copy;2024 Charme & Brillance. Tous droits réservés. Fait Par Serine HAMITOUCHE</p>
+    </footer>
+    <script>
+        const mainNav = document.getElementById('js-menu');
+        const navBarToggle = document.getElementById('js-navbar-toggle');
+
+        navBarToggle.addEventListener('click', function () {
+            mainNav.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
+
 
